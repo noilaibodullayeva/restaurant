@@ -524,15 +524,14 @@ header .icons #bars {
     color: var(--light-color);
 }
 
-.order form .inputBox .input input:active,
-.order form .inputBox .input textarea:active{
+.order form .inputBox .input input:focus,
+.order form .inputBox .input textarea:focus{
     background: #eee;
-    border: .1rem solid var(--green);
+    border: 1px solid var(--green);
 }
 
 .order form .inputBox .input input,
 .order form .inputBox .input textarea{
-    /* background: #eee; */
     border-radius: .5rem;
     padding: 1rem;
     font-size: 1.6rem;
@@ -541,6 +540,7 @@ header .icons #bars {
     margin-bottom: 1rem;
     width: 100%;
     border: .1rem solid #eee;
+    transition: all ease-in-out 0.2s;
 }
 
 .order form .inputBox .input textarea{
